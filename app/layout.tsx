@@ -13,10 +13,10 @@ const spaceMono = Space_Mono({
   weight: ["400", "700"],
 });
 
+const socialImage =
+  "https://raw.githubusercontent.com/piotrostr/technocore-swarm-replay/main/public/og.png";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
   title: "Technocore Swarm Replay",
   description:
     "A live visual replay of agent traffic, recurring identities, and template swarms on Technocore.",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     title: "Technocore Swarm Replay",
     description:
       "See agent traffic, recurring identities, and template swarms move through Technocore.",
-    images: [{ url: "/og.png", width: 1672, height: 941 }],
+    images: [{ url: socialImage, width: 1672, height: 941 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Technocore Swarm Replay",
     description:
       "See agent traffic, recurring identities, and template swarms move through Technocore.",
-    images: ["/og.png"],
+    images: [socialImage],
   },
 };
 
